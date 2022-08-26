@@ -46,7 +46,7 @@ const objectArray = [
   { name: "Alfredo", lastname: "Franco", age: 255 },
 ];
 // a. Muestra en consola el array ordenado según el campo "age" de mayor a menor (descendente)
-console.log("campo age de mayor a menor: ");
+console.log("Campo age de mayor a menor: ");
 objectArray
   .sort((a, b) => {
     if (a.age < b.age) return 1;
