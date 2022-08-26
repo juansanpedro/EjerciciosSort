@@ -46,5 +46,28 @@ const objectArray = [
   { name: "Alfredo", lastname: "Franco", age: 255 },
 ];
 // a. Muestra en consola el array ordenado según el campo "age" de mayor a menor (descendente)
+console.log("campo age de mayor a menor: ");
+objectArray
+  .sort((a, b) => {
+    if (a.age < b.age) return 1;
+    if (a.age > b.age) return -1;
+    return 0;
+  })
+  .forEach((value) => {
+    console.log(`${value.age}`);
+  });
 
 // b. Muestra en consola el array ordenado según el campo "lastname" de A-Z
+
+console.log("Ordenado según el campo lastname de A-Z: ");
+objectArray
+  .sort((a, b) => {
+    if (a.lastname < b.lastname) return -1;
+    if (a.lastname > b.alastnamege) return 1;
+    return 0;
+  })
+  .forEach((value) => {
+    console.log(`${value.lastname}`);
+  });
+
+
