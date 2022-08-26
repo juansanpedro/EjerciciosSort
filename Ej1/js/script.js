@@ -1,16 +1,41 @@
 // 1. Array de números:
 const numberArray = [4, 10, 34, 999, 0, -10000, -999, 58, 2, 4];
 // a. Muestra en consola el array ordenado de menor a mayor (ascendente)
-
+console.log("Ascendiente - " +
+  JSON.stringify(numberArray.sort((a, b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  }))
+);
 // b. Muestra en consola el array ordenado de mayor a menor (descendente)
-
+console.log("Descendiente - "+
+  JSON.stringify(numberArray.sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+    return 0;
+  }))
+);
 
 // 2. Array de String:
 const stringArray = ["a", "r", "alo", "www", "internet", "qqq", "bbb"];
 // a. Muestra en consola el array ordenado A-Z
-
+console.log("A-Z: " +
+stringArray.sort((a, b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  })
+  );
+  
 // b. Muestra en consola el array ordenado Z-A
-
+console.log("Z-A: " +
+stringArray.sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+    return 0;
+  })
+  );
 
 // 3. Array de objetos:
 const objectArray = [
