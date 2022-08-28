@@ -6,3 +6,15 @@ const objectArray = [
   { name: "Alfredo", lastname: "Franco", age: 255 },
 ];
 
+
+console.log("A-Z");
+objectArray
+  .sort((a, b) => {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+  })
+  .forEach((value) => {
+    console.log(`${value.name}`);
+  });
+
