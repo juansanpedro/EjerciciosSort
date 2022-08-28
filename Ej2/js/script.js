@@ -18,3 +18,10 @@ objectArray
     console.log(`${value.name}`);
   });
 
+function mostrar(){
+  document.getElementById("date").innerHTML = objectArray;
+}
+
+
+
+
