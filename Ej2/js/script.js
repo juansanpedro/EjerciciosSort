@@ -15,12 +15,15 @@ objectArray
     return 0;
   })
   .forEach((value) => {
-    console.log(`${value.name}`);
+    console.log(`${value.name}${value.lastname}${value.age}`);
   });
 
-function mostrar(){
-  document.getElementById("date").innerHTML = objectArray;
+
+for (const name of objectArray) {
+  
 }
+  
+
 
 
 
