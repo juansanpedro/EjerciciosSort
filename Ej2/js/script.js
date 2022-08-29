@@ -15,13 +15,18 @@ objectArray
     return 0;
   })
   .forEach((value) => {
-    console.log(`${value.name}${value.lastname}${value.age}`);
+    console.log(`${value.name} ${value.lastname} ${value.age}`);
   });
 
 
-for (const name of objectArray) {
-  
-}
+ let parrafo = document.getElementById("data")
+
+ parrafo.innerHTML = objectArray.length;
+
+
+
+
+
   
 
 
