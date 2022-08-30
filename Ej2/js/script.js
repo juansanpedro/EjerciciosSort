@@ -7,7 +7,6 @@ const objectArray = [
 ];
 
 
-console.log("A-Z");
 objectArray
   .sort((a, b) => {
     if (a.name < b.name) return -1;
@@ -16,12 +15,20 @@ objectArray
   })
   .forEach((value) => {
     console.log(`${value.name} ${value.lastname} ${value.age}`);
-  });
+  }); 
+
+for (const persona of objectArray) {
+  let parrafo = document.getElementById("data")
+  
+  parrafo.innerHTML += `<th>${persona.name}</th> <th>${persona.lastname}</th> <th>${persona.age}</th>`;
+}
 
 
- let parrafo = document.getElementById("data")
+ 
 
- parrafo.innerHTML = objectArray.length;
+
+
+
 
 
 
