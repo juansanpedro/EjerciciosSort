@@ -63,7 +63,7 @@ console.log("Ordenado según el campo lastname de A-Z: ");
 objectArray
   .sort((a, b) => {
     if (a.lastname < b.lastname) return -1;
-    if (a.lastname > b.alastnamege) return 1;
+    if (a.lastname > b.lastname) return 1;
     return 0;
   })
   .forEach((value) => {
